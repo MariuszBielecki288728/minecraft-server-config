@@ -1,0 +1,44 @@
+services:
+  mc-server:
+    restart: unless-stopped
+    build: .
+    tty: true
+    stdin_open: true
+    ports:
+      - "25565:25565" # MC Server
+      - "8123:8123" # dynmap
+    environment:
+
+      EULA: "TRUE"
+      MEMORY: "16G"
+      WORLD: ${WORLD_URL}
+      ICON: "https://avatars.githubusercontent.com/u/22575146?v=4"
+
+      # server.properties overrides
+      DUMP_SERVER_PROPERTIES: true
+
+      ONLINE_MODE: "false"
+      DIFFICULTY: "normal"
+      VIEW_DISTANCE: 13
+      ENFORCE_WHITELIST: "true"
+      OPS: ${ADMINISTRATORS}
+      WHITELIST: ${WHITELIST_USERS}
+
+      # Server version
+      TYPE: "PAPER"
+      VERSION: "1.21"
+
+      #CurseForge mods
+      CF_API_KEY: ${CF_API_KEY}
+      CURSEFORGE_FILES: |
+        https://www.curseforge.com/minecraft/bukkit-plugins/dead-chest
+        https://www.curseforge.com/minecraft/bukkit-plugins/thizzyz-tree-feller
+        https://www.curseforge.com/minecraft/bukkit-plugins/dynmap/files/5442792
+        https://www.curseforge.com/minecraft/bukkit-plugins/authme-reloaded
+
+
+
+
+    volumes:
+      # attach the relative directory 'data' to the container's /data path
+      - ./data:/data
