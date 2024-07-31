@@ -10,7 +10,7 @@ services:
     environment:
 
       EULA: "TRUE"
-      MEMORY: "16G"
+      MEMORY: "12G"
       WORLD: ${WORLD_URL}
       ICON: "https://avatars.githubusercontent.com/u/22575146?v=4"
 
