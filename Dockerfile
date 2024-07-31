@@ -2,4 +2,4 @@ FROM itzg/minecraft-server
 
 ENV TYPE=PAPER
 
-COPY plugins-configs/* /plugins/
+COPY plugins-configs/ /plugins/
