@@ -104,7 +104,7 @@ settings:
         # The next time the player joins the server, if his IP
         # is the same as last time and the timeout hasn't
         # expired, he will not need to authenticate.
-        enabled: false
+        enabled: true
         # After how many minutes should a session expire?
         # A player's session ends after the timeout or if his IP has changed
         timeout: 120
@@ -150,7 +150,7 @@ settings:
         # When this setting is enabled, online players can't be kicked out
         # due to "Logged in from another Location"
         # This setting will prevent potential security exploits.
-        ForceSingleSession: true
+        ForceSingleSession: false
         ForceSpawnLocOnJoin:
             # If enabled, every player that spawn in one of the world listed in
             # "ForceSpawnLocOnJoin.worlds" will be teleported to the spawnpoint after successful
@@ -207,9 +207,9 @@ settings:
         # Spawn priority; values: authme, essentials, cmi, multiverse, default
         spawnPriority: authme,essentials,cmi,multiverse,default
         # Maximum Login authorized by IP
-        maxLoginPerIp: 0
+        maxLoginPerIp: 5
         # Maximum Join authorized by IP
-        maxJoinPerIp: 0
+        maxJoinPerIp: 5
         # AuthMe will NEVER teleport players if set to true!
         noTeleport: false
         # Regex syntax for allowed chars in passwords. The default [!-~] allows all visible ASCII
