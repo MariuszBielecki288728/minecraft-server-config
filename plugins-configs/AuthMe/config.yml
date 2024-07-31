@@ -150,7 +150,7 @@ settings:
         # When this setting is enabled, online players can't be kicked out
         # due to "Logged in from another Location"
         # This setting will prevent potential security exploits.
-        ForceSingleSession: false
+        ForceSingleSession: true
         ForceSpawnLocOnJoin:
             # If enabled, every player that spawn in one of the world listed in
             # "ForceSpawnLocOnJoin.worlds" will be teleported to the spawnpoint after successful
