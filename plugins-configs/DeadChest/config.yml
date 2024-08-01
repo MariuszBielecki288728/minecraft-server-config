@@ -18,7 +18,7 @@ OnlyOwnerCanOpenDeadChest: true
 
 # The amount of time a DeadChest will be active for (in seconds)...
 #   You can disable this limit by setting the value to 0.
-DeadChestDuration: 300
+DeadChestDuration: 3600
 
 # Should DeadChests be protected from explosions and other players?
 #   > false - DeadChests will not be protected and can be broken.
@@ -70,18 +70,18 @@ DropMode: 1
 DropBlock: 1
 
 # Store Player XP on Deadchest
-StoreXP: false
+StoreXP: true
 
 # % of XP stored on the deadchest. Only works if StoreXP is true
 # If 0 is used the all the XP from the player vanishes, no XP orb gets dropped on death and no XP gets stored
 # If a value of 100 is used then all the XP is stored on the chest
 # Values higher than 100 are allowed but not recommended as they would duplicate XP
-StoreXPPercentage: 100
+StoreXPPercentage: 70
 
 # Should we drop DeadChest contents when the timer expires?
 #   > false - DeadChest contents are removed when the timer expires.
 #   > true  - DeadChest contents are dropped when the timer expires.
-ItemsDroppedAfterTimeOut: false
+ItemsDroppedAfterTimeOut: true
 
 # Should generate a DeadChest on lava?
 GenerateOnLava: true
