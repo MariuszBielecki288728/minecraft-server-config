@@ -7,9 +7,9 @@
 
 version: 2
 
-delay: 60
+delay: 120
 backup-thread-priority: 1
-keep-count: 5
+keep-count: 2
 local-keep-count: 1
 zip-compression: 1
 backups-require-players: true
