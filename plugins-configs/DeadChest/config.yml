@@ -18,7 +18,7 @@ OnlyOwnerCanOpenDeadChest: true
 
 # The amount of time a DeadChest will be active for (in seconds)...
 #   You can disable this limit by setting the value to 0.
-DeadChestDuration: 3600
+DeadChestDuration: 86400
 
 # Should DeadChests be protected from explosions and other players?
 #   > false - DeadChests will not be protected and can be broken.
@@ -27,7 +27,7 @@ IndestructibleChest: true
 
 # The maximum number of DeadChests a player can have active at a time...
 #   You can disable this limit by setting the value to 0.
-maxDeadChestPerPlayer: 15
+maxDeadChestPerPlayer: 30
 
 # Should we notify the console when and where a DeadChest is created?
 logDeadChestOnConsole: false
@@ -76,7 +76,7 @@ StoreXP: true
 # If 0 is used the all the XP from the player vanishes, no XP orb gets dropped on death and no XP gets stored
 # If a value of 100 is used then all the XP is stored on the chest
 # Values higher than 100 are allowed but not recommended as they would duplicate XP
-StoreXPPercentage: 70
+StoreXPPercentage: 90
 
 # Should we drop DeadChest contents when the timer expires?
 #   > false - DeadChest contents are removed when the timer expires.
