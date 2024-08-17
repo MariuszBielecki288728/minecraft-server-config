@@ -13,7 +13,7 @@
   "teleportInventoryDefault": "TRUE",
   "gateMaxArea": 100,
   "gateMaterialDefault": "PORTAL",
-  "gateCooldownPeriod": 1000,
+  "gateCooldownPeriod": 10000,
   "bungeeCordSupport": false,
   "bungeeTeleportDefault": "LOCATION",
   "useBungeeMessages": true,
