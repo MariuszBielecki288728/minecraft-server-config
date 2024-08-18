@@ -7,16 +7,16 @@ services:
     ports:
       - "25565:25565" # MC Server
       - "8123:8123" # dynmap
+    stop_grace_period: 80s
     environment:
-
       EULA: "TRUE"
-      MEMORY: "12G"
+      MEMORY: "16G"
       WORLD: ${WORLD_URL}
       ICON: "https://avatars.githubusercontent.com/u/22575146?v=4"
+      STOP_SERVER_ANNOUNCE_DELAY: 10
+      TZ: Europe/Warsaw
 
       # server.properties overrides
-      DUMP_SERVER_PROPERTIES: true
-
       ONLINE_MODE: "false"
       DIFFICULTY: "normal"
       VIEW_DISTANCE: 13

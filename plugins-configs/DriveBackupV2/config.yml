@@ -9,8 +9,8 @@ version: 2
 
 delay: 120
 backup-thread-priority: 1
-keep-count: 2
-local-keep-count: 1
+keep-count: 1
+local-keep-count: 0
 zip-compression: 1
 backups-require-players: true
 disable-saving-during-backups: true
@@ -35,7 +35,7 @@ googledrive:
   enabled: false
   shared-drive-id: ""
 onedrive:
-  enabled: false
+  enabled: true
 dropbox:
   enabled: false
 webdav:
